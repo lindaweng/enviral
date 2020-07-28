@@ -6,7 +6,6 @@
 //  Copyright © 2020 Linda Weng. All rights reserved.
 //
 
-// Hello
 
 import UIKit
 
