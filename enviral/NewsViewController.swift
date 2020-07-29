@@ -34,4 +34,15 @@ class NewsViewController: UIViewController {
         link = "https://www.enn.com/"
     }
     
+    @IBAction func nytClimate(_ sender: UIButton) {
+        link = "https://www.nytimes.com/section/climate"
+    }
+    
+    @IBAction func bbcButton(_ sender: UIButton) {
+        link = "https://www.bbc.com/news/science_and_environment"
+    }
+    
+    @IBAction func nbcButton(_ sender: UIButton) {
+        link = "https://www.nbcnews.com/science/environment"
+    }
 }

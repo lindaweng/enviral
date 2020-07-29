@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FI7-3N-30b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FI7-3N-30b">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -15,12 +15,12 @@
         <!--Quizzes-->
         <scene sceneID="FTt-x1-6vb">
             <objects>
-                <viewController id="Ir2-8z-shO" sceneMemberID="viewController">
+                <viewController id="Ir2-8z-shO" customClass="QuizViewController" customModule="enviral" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p3e-gW-IuK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="quizzes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tle-pL-NEk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quizzes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tle-pL-NEk">
                                 <rect key="frame" x="91" y="44" width="233" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="60"/>
@@ -32,27 +32,36 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="30"/>
-                                <state key="normal" title="something quiz">
+                                <state key="normal" title="Ocean Quiz">
                                     <color key="titleColor" red="0.31495088290000001" green="0.6919651282" blue="0.69850491749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="oceanQuiz:" destination="Ir2-8z-shO" eventType="touchUpInside" id="mRs-I7-aKf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOp-AH-FVP">
                                 <rect key="frame" x="75" y="314" width="263" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="30"/>
-                                <state key="normal" title="something quiz">
+                                <state key="normal" title="Rainforest Quiz">
                                     <color key="titleColor" red="0.31495088290000001" green="0.6919651282" blue="0.69850491749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="greenQuiz:" destination="Ir2-8z-shO" eventType="touchUpInside" id="xFh-mx-RLz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEo-WZ-Z66">
                                 <rect key="frame" x="76" y="467" width="263" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="30"/>
-                                <state key="normal" title="something quiz">
+                                <state key="normal" title="Population Quiz">
                                     <color key="titleColor" red="0.31495088290000001" green="0.6919651282" blue="0.69850491749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pollutionQuiz:" destination="Ir2-8z-shO" eventType="touchUpInside" id="Ypv-h8-Mhx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -89,7 +98,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6f-pt-8n2">
                                 <rect key="frame" x="76" y="285" width="263" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.45098039215686275" green="0.99215686274509807" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="30"/>
                                 <state key="normal" title="something quiz">
                                     <color key="titleColor" red="0.31495088290000001" green="0.6919651282" blue="0.69850491749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -120,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ScX-VL-DaW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="529" y="789"/>
+            <point key="canvasLocation" x="452" y="792"/>
         </scene>
         <!--Facts-->
         <scene sceneID="FWa-Lp-0XP">
@@ -155,25 +164,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="news!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyv-bt-XFv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="news!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyv-bt-XFv">
                                 <rect key="frame" x="91" y="112" width="233" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVl-NN-cho">
-                                <rect key="frame" x="38" y="231" width="321" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Environmental News Network"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVl-NN-cho">
+                                <rect key="frame" x="39" y="218" width="321" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="3vt-iO-Hqh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Environmental News Network">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.46274509800000002" blue="0.47843137250000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="ennLinkTapped:" destination="n4r-Q9-uAv" eventType="touchUpInside" id="Vz1-tN-JNg"/>
                                     <segue destination="InX-ic-iz9" kind="show" id="lhw-TU-lQR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KO1-qg-Ah8">
+                                <rect key="frame" x="58" y="338" width="282" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="xKZ-TL-tvB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="New York Times Climate Section">
+                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nytClimate:" destination="n4r-Q9-uAv" eventType="touchUpInside" id="j46-j1-YJD"/>
+                                    <segue destination="InX-ic-iz9" kind="show" id="LPB-qm-Rju"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQi-3t-3pQ">
+                                <rect key="frame" x="67" y="430" width="264" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="BBC Science and Environment">
+                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bbcButton:" destination="n4r-Q9-uAv" eventType="touchUpInside" id="xph-7Q-bVT"/>
+                                    <segue destination="InX-ic-iz9" kind="show" id="myv-0P-1YV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gR-yg-Aym">
+                                <rect key="frame" x="66" y="504" width="266" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="NBC Science and Environment">
+                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nbcButton:" destination="n4r-Q9-uAv" eventType="touchUpInside" id="edZ-IB-Fan"/>
+                                    <segue destination="InX-ic-iz9" kind="show" id="E73-bQ-QBf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fQi-3t-3pQ" firstAttribute="centerY" secondItem="65W-hk-B2v" secondAttribute="centerY" id="30a-vD-Xeg"/>
+                            <constraint firstItem="2gR-yg-Aym" firstAttribute="leading" secondItem="O5C-H0-t66" secondAttribute="leading" constant="66" id="3i9-ZZ-2lB"/>
+                            <constraint firstItem="fQi-3t-3pQ" firstAttribute="leading" secondItem="O5C-H0-t66" secondAttribute="leading" constant="67" id="4vz-yA-tqx"/>
+                            <constraint firstItem="fQi-3t-3pQ" firstAttribute="centerX" secondItem="2gR-yg-Aym" secondAttribute="centerX" id="EZx-fN-Hi6"/>
+                            <constraint firstItem="O5C-H0-t66" firstAttribute="bottom" secondItem="2gR-yg-Aym" secondAttribute="bottom" constant="273" id="GQT-0s-3rB"/>
+                            <constraint firstItem="KO1-qg-Ah8" firstAttribute="top" secondItem="AVl-NN-cho" secondAttribute="bottom" constant="38" id="Lf6-VD-9Nr"/>
+                            <constraint firstItem="KO1-qg-Ah8" firstAttribute="centerX" secondItem="fQi-3t-3pQ" secondAttribute="centerX" id="OtY-Fs-4KC"/>
+                            <constraint firstItem="AVl-NN-cho" firstAttribute="centerX" secondItem="KO1-qg-Ah8" secondAttribute="centerX" id="Pae-Ix-Z6S"/>
+                            <constraint firstItem="Uyv-bt-XFv" firstAttribute="leading" secondItem="O5C-H0-t66" secondAttribute="leading" constant="91" id="bki-MB-56O"/>
+                            <constraint firstItem="Uyv-bt-XFv" firstAttribute="top" secondItem="O5C-H0-t66" secondAttribute="top" constant="24" id="iWj-ar-h6E"/>
+                            <constraint firstItem="2gR-yg-Aym" firstAttribute="top" secondItem="fQi-3t-3pQ" secondAttribute="bottom" constant="38" id="ikY-en-3a0"/>
+                            <constraint firstItem="AVl-NN-cho" firstAttribute="leading" secondItem="O5C-H0-t66" secondAttribute="leading" constant="39" id="mBj-yN-f7H"/>
+                            <constraint firstItem="O5C-H0-t66" firstAttribute="trailing" secondItem="AVl-NN-cho" secondAttribute="trailing" constant="54" id="qfN-Ns-g2o"/>
+                            <constraint firstItem="AVl-NN-cho" firstAttribute="top" secondItem="Uyv-bt-XFv" secondAttribute="bottom" constant="8" id="rEq-la-Uj1"/>
+                            <constraint firstItem="Uyv-bt-XFv" firstAttribute="centerX" secondItem="65W-hk-B2v" secondAttribute="centerX" id="uO0-l1-boq"/>
+                            <constraint firstItem="KO1-qg-Ah8" firstAttribute="leading" secondItem="O5C-H0-t66" secondAttribute="leading" constant="58" id="unp-p3-Xxt"/>
+                            <constraint firstItem="fQi-3t-3pQ" firstAttribute="top" secondItem="KO1-qg-Ah8" secondAttribute="bottom" constant="56" id="zQS-kV-r9b"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O5C-H0-t66"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="News" image="book" catalog="system" id="wED-Ll-v0n"/>
@@ -250,6 +317,9 @@
             <point key="canvasLocation" x="-1209" y="469"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="myv-0P-1YV"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="book" catalog="system" width="128" height="101"/>
         <image name="bubble.left" catalog="system" width="128" height="110"/>
