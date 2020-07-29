@@ -15,6 +15,8 @@
 		FC6814CA24D0748700FB0A90 /* enviral.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC6814C824D0748700FB0A90 /* enviral.xcdatamodeld */; };
 		FC6814CC24D0748A00FB0A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC6814CB24D0748A00FB0A90 /* Assets.xcassets */; };
 		FC6814CF24D0748A00FB0A90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC6814CD24D0748A00FB0A90 /* LaunchScreen.storyboard */; };
+		FC6814E324D1CB5000FB0A90 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6814E224D1CB5000FB0A90 /* NewsViewController.swift */; };
+		FC6814E524D1CC2F00FB0A90 /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6814E424D1CC2F00FB0A90 /* WebsiteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FC6814CB24D0748A00FB0A90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC6814CE24D0748A00FB0A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC6814D024D0748A00FB0A90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC6814E224D1CB5000FB0A90 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		FC6814E424D1CC2F00FB0A90 /* WebsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				FC6814C124D0748700FB0A90 /* SceneDelegate.swift */,
 				FC6814C324D0748700FB0A90 /* ViewController.swift */,
 				FC6814C524D0748700FB0A90 /* Main.storyboard */,
+				FC6814E224D1CB5000FB0A90 /* NewsViewController.swift */,
+				FC6814E424D1CC2F00FB0A90 /* WebsiteViewController.swift */,
 				FC6814CB24D0748A00FB0A90 /* Assets.xcassets */,
 				FC6814CD24D0748A00FB0A90 /* LaunchScreen.storyboard */,
 				F2E1F23B24D0A5060044A5A2 /* coolvetica rg.ttf */,
@@ -148,6 +154,8 @@
 				FC6814C424D0748700FB0A90 /* ViewController.swift in Sources */,
 				FC6814CA24D0748700FB0A90 /* enviral.xcdatamodeld in Sources */,
 				FC6814C024D0748700FB0A90 /* AppDelegate.swift in Sources */,
+				FC6814E324D1CB5000FB0A90 /* NewsViewController.swift in Sources */,
+				FC6814E524D1CC2F00FB0A90 /* WebsiteViewController.swift in Sources */,
 				FC6814C224D0748700FB0A90 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
