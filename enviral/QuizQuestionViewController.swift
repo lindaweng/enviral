@@ -38,7 +38,6 @@ class QuizQuestionViewController: UIViewController {
         
         quizTitle.text = selectedQuiz?.quizTitle
         if let num = questionNum, let rightAns = correctAns {
-            print(num)
             questionName.text = selectedQuiz?.questionsArray[num].question
             
             
