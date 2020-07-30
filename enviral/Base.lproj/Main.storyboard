@@ -15,15 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quizzes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tle-pL-NEk">
-                                <rect key="frame" x="91" y="44" width="233" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="60"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPW-2Q-4g9">
-                                <rect key="frame" x="76" y="165" width="263" height="68"/>
+                                <rect key="frame" x="76" y="247" width="263" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
@@ -36,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOp-AH-FVP">
-                                <rect key="frame" x="75" y="314" width="263" height="73"/>
+                                <rect key="frame" x="75" y="396" width="263" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
@@ -48,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEo-WZ-Z66">
-                                <rect key="frame" x="76" y="467" width="263" height="73"/>
+                                <rect key="frame" x="76" y="549" width="263" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
@@ -59,6 +52,13 @@
                                     <action selector="pollutionQuiz:" destination="Ir2-8z-shO" eventType="touchUpInside" id="Ypv-h8-Mhx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quizzes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tle-pL-NEk">
+                                <rect key="frame" x="91" y="87" width="233" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="XxG-6D-HVQ"/>
@@ -151,7 +151,7 @@
                                     <segue destination="qur-FJ-9fy" kind="show" id="Cv4-1X-LiX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comment and Correct answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0C-iJ-vDW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0C-iJ-vDW">
                                 <rect key="frame" x="20" y="657" width="374" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="17"/>
@@ -211,17 +211,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="news!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyv-bt-XFv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="news!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyv-bt-XFv">
                                 <rect key="frame" x="91" y="112" width="233" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVl-NN-cho">
-                                <rect key="frame" x="39" y="217" width="321" height="82"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="3vt-iO-Hqh"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVl-NN-cho">
+                                <rect key="frame" x="39" y="216" width="321" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <state key="normal" title="Environmental News Network">
                                     <color key="titleColor" red="0.93725490199999995" green="0.46274509800000002" blue="0.47843137250000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
@@ -231,11 +230,9 @@
                                     <segue destination="InX-ic-iz9" kind="show" id="lhw-TU-lQR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KO1-qg-Ah8">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KO1-qg-Ah8">
                                 <rect key="frame" x="58" y="338" width="302" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="xKZ-TL-tvB"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <state key="normal" title="New York Times Climate Section">
                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -245,8 +242,9 @@
                                     <segue destination="InX-ic-iz9" kind="show" id="LPB-qm-Rju"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQi-3t-3pQ">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQi-3t-3pQ">
                                 <rect key="frame" x="67" y="430" width="281" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <state key="normal" title="BBC Science and Environment">
                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -256,8 +254,9 @@
                                     <segue destination="InX-ic-iz9" kind="show" id="myv-0P-1YV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gR-yg-Aym">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gR-yg-Aym">
                                 <rect key="frame" x="66" y="504" width="282" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <state key="normal" title="NBC Science and Environment">
                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -269,25 +268,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="fQi-3t-3pQ" firstAttribute="centerY" secondItem="65W-hk-B2v" secondAttribute="centerY" id="30a-vD-Xeg"/>
-                            <constraint firstItem="2gR-yg-Aym" firstAttribute="leading" secondItem="O5C-H0-t66" secondAttribute="leading" constant="66" id="3i9-ZZ-2lB"/>
-                            <constraint firstItem="fQi-3t-3pQ" firstAttribute="leading" secondItem="O5C-H0-t66" secondAttribute="leading" constant="67" id="4vz-yA-tqx"/>
-                            <constraint firstItem="fQi-3t-3pQ" firstAttribute="centerX" secondItem="2gR-yg-Aym" secondAttribute="centerX" id="EZx-fN-Hi6"/>
-                            <constraint firstItem="O5C-H0-t66" firstAttribute="bottom" secondItem="2gR-yg-Aym" secondAttribute="bottom" constant="273" id="GQT-0s-3rB"/>
-                            <constraint firstItem="KO1-qg-Ah8" firstAttribute="top" secondItem="AVl-NN-cho" secondAttribute="bottom" constant="38" id="Lf6-VD-9Nr"/>
-                            <constraint firstItem="KO1-qg-Ah8" firstAttribute="centerX" secondItem="fQi-3t-3pQ" secondAttribute="centerX" id="OtY-Fs-4KC"/>
-                            <constraint firstItem="AVl-NN-cho" firstAttribute="centerX" secondItem="KO1-qg-Ah8" secondAttribute="centerX" id="Pae-Ix-Z6S"/>
-                            <constraint firstItem="Uyv-bt-XFv" firstAttribute="leading" secondItem="O5C-H0-t66" secondAttribute="leading" constant="91" id="bki-MB-56O"/>
-                            <constraint firstItem="Uyv-bt-XFv" firstAttribute="top" secondItem="O5C-H0-t66" secondAttribute="top" constant="24" id="iWj-ar-h6E"/>
-                            <constraint firstItem="2gR-yg-Aym" firstAttribute="top" secondItem="fQi-3t-3pQ" secondAttribute="bottom" constant="38" id="ikY-en-3a0"/>
-                            <constraint firstItem="AVl-NN-cho" firstAttribute="leading" secondItem="O5C-H0-t66" secondAttribute="leading" constant="39" id="mBj-yN-f7H"/>
-                            <constraint firstItem="O5C-H0-t66" firstAttribute="trailing" secondItem="AVl-NN-cho" secondAttribute="trailing" constant="54" id="qfN-Ns-g2o"/>
-                            <constraint firstItem="AVl-NN-cho" firstAttribute="top" secondItem="Uyv-bt-XFv" secondAttribute="bottom" constant="8" id="rEq-la-Uj1"/>
-                            <constraint firstItem="Uyv-bt-XFv" firstAttribute="centerX" secondItem="65W-hk-B2v" secondAttribute="centerX" id="uO0-l1-boq"/>
-                            <constraint firstItem="KO1-qg-Ah8" firstAttribute="leading" secondItem="O5C-H0-t66" secondAttribute="leading" constant="58" id="unp-p3-Xxt"/>
-                            <constraint firstItem="fQi-3t-3pQ" firstAttribute="top" secondItem="KO1-qg-Ah8" secondAttribute="bottom" constant="56" id="zQS-kV-r9b"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O5C-H0-t66"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="News" image="book" catalog="system" id="wED-Ll-v0n"/>
@@ -355,8 +335,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="Ir2-8z-shO" kind="relationship" relationship="viewControllers" id="Nqe-kK-1YP"/>
-                        <segue destination="WeS-E3-6c0" kind="relationship" relationship="viewControllers" id="CPO-zD-nhg"/>
                         <segue destination="MWf-FY-Vf0" kind="relationship" relationship="viewControllers" id="zEu-Ot-bs3"/>
+                        <segue destination="WeS-E3-6c0" kind="relationship" relationship="viewControllers" id="CPO-zD-nhg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ica-1y-9IG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

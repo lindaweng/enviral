@@ -31,7 +31,7 @@ class QuizViewController: UIViewController {
         question3 = QuizQuestion(question: "Since 1870, how many inches have global sea levels risen?", wrongAns1: "12 inches", wrongAns2: "4 inches", wrongAns3: "10 inches", rightAns: "8 inches", comment: "This is more than the previous 2000 years combined")
         question4 = QuizQuestion(question: "How many people live within 3 feet of sea level?", wrongAns1: "10 million", wrongAns2: "1 billion", wrongAns3: "1 million", rightAns: "100 million", comment: "Many cities of the world are located near vulnerable coastal areas and the rising sea levels due to global warming could threaten their lives")
         question5 = QuizQuestion(question: "Up to how many tons of sunscreen wash off of swimmers in the oceans per year?", wrongAns1: "11,000", wrongAns2: "6,000", wrongAns3: "1,000", rightAns: "14,000", comment: "")
-        question6 = QuizQuestion(question: "What percentage of turtles have eaten plastic?", wrongAns1: "", wrongAns2: "", wrongAns3: "", rightAns: "", comment: "")
+        question6 = QuizQuestion(question: "What percentage of turtles have eaten plastic?", wrongAns1: "13%", wrongAns2: "41%", wrongAns3: "96%", rightAns: "52%", comment: "That's more than half of the turtles!")
         quiz.questionsArray.append(contentsOf: [question1, question2, question3, question4, question5, question6])
     }
     

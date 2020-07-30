@@ -42,17 +42,17 @@ class QuizQuestionViewController: UIViewController {
             
             rightAns.setTitle(selectedQuiz?.questionsArray[num].rightAnswer, for: .normal)
 //            print(rightAns.titleLabel)
-            
-            if answer1.titleLabel!.text == "" {
+                        
+            if answer1.titleLabel!.text == nil {
                 answer1.setTitle(selectedQuiz?.questionsArray[num].wrongAnswer1, for: .normal)
             }
-            if answer2.titleLabel!.text == "" {
+            if answer2.titleLabel!.text == nil {
                 answer2.setTitle(selectedQuiz?.questionsArray[num].wrongAnswer2, for: .normal)
             }
-            if answer3.titleLabel!.text == "" {
+            if answer3.titleLabel!.text == nil {
                 answer3.setTitle(selectedQuiz?.questionsArray[num].wrongAnswer3, for: .normal)
             }
-            if answer4.titleLabel!.text == "" {
+            if answer4.titleLabel!.text == nil {
                 if rightAns == answer1 {
                     answer4.setTitle(selectedQuiz?.questionsArray[num].wrongAnswer1, for: .normal)
                 } else if rightAns == answer2 {
@@ -62,10 +62,10 @@ class QuizQuestionViewController: UIViewController {
                 }
             }
             
-            answer1.setTitle(selectedQuiz?.questionsArray[num].wrongAnswer1, for: .normal)
-            answer2.setTitle(selectedQuiz?.questionsArray[num].wrongAnswer2, for: .normal)
-            answer3.setTitle(selectedQuiz?.questionsArray[num].wrongAnswer3, for: .normal)
-            answer4.setTitle(selectedQuiz?.questionsArray[num].rightAnswer, for: .normal)
+//            answer1.setTitle(selectedQuiz?.questionsArray[num].wrongAnswer1, for: .normal)
+//            answer2.setTitle(selectedQuiz?.questionsArray[num].wrongAnswer2, for: .normal)
+//            answer3.setTitle(selectedQuiz?.questionsArray[num].wrongAnswer3, for: .normal)
+//            answer4.setTitle(selectedQuiz?.questionsArray[num].rightAnswer, for: .normal)
         }
     }
     
@@ -83,40 +83,48 @@ class QuizQuestionViewController: UIViewController {
     }
     
     @IBAction func answer1Tapped(_ sender: Any) {
-        nextButton.alpha = 1.0
+        if questionNum != 5 {
+            nextButton.alpha = 1.0
+        }
         answer1.backgroundColor = select
         answer2.backgroundColor = notSelect
         answer3.backgroundColor = notSelect
         answer4.backgroundColor = notSelect
-        commentLabel.text = (selectedQuiz?.questionsArray[questionNum!].comment)! + "The right answer is: " + (selectedQuiz?.questionsArray[questionNum!].rightAnswer)!
+        commentLabel.text = (selectedQuiz?.questionsArray[questionNum!].comment)! + "\nThe right answer is: " + (selectedQuiz?.questionsArray[questionNum!].rightAnswer)!
         
     }
     
     @IBAction func answer2Tapped(_ sender: Any) {
-        nextButton.alpha = 1.0
+        if questionNum != 5 {
+            nextButton.alpha = 1.0
+        }
         answer1.backgroundColor = notSelect
         answer2.backgroundColor = select
         answer3.backgroundColor = notSelect
         answer4.backgroundColor = notSelect
-        commentLabel.text = (selectedQuiz?.questionsArray[questionNum!].comment)! + "The right answer is: " + (selectedQuiz?.questionsArray[questionNum!].rightAnswer)!
+        commentLabel.text = (selectedQuiz?.questionsArray[questionNum!].comment)! + "\nThe right answer is: " + (selectedQuiz?.questionsArray[questionNum!].rightAnswer)!
     }
     
     @IBAction func answer3Tapped(_ sender: Any) {
-        nextButton.alpha = 1.0
+        if questionNum != 5 {
+            nextButton.alpha = 1.0
+        }
         answer1.backgroundColor = notSelect
         answer2.backgroundColor = notSelect
         answer3.backgroundColor = select
         answer4.backgroundColor = notSelect
-        commentLabel.text = (selectedQuiz?.questionsArray[questionNum!].comment)! + "The right answer is: " + (selectedQuiz?.questionsArray[questionNum!].rightAnswer)!
+        commentLabel.text = (selectedQuiz?.questionsArray[questionNum!].comment)! + "\nThe right answer is: " + (selectedQuiz?.questionsArray[questionNum!].rightAnswer)!
     }
     
     @IBAction func answer4Tapped(_ sender: Any) {
-        nextButton.alpha = 1.0
+        if questionNum != 5 {
+            nextButton.alpha = 1.0
+        }
         answer1.backgroundColor = notSelect
         answer2.backgroundColor = notSelect
         answer3.backgroundColor = notSelect
         answer4.backgroundColor = select
-        commentLabel.text = (selectedQuiz?.questionsArray[questionNum!].comment)! + "The right answer is: " + (selectedQuiz?.questionsArray[questionNum!].rightAnswer)!
+        commentLabel.text = (selectedQuiz?.questionsArray[questionNum!].comment)! + "\nThe right answer is: " + (selectedQuiz?.questionsArray[questionNum!].rightAnswer)!
     }
     
     @IBAction func nextTapped(_ sender: Any) {
