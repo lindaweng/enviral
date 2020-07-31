@@ -38,7 +38,7 @@ class QuizQuestionViewController: UIViewController {
         
         quizTitle.text = selectedQuiz?.quizTitle
         if let num = questionNum, let rightAns = correctAns {
-            questionName.text = selectedQuiz?.questionsArray[num].question
+            questionName.text = "Q\(num+1): " + (selectedQuiz?.questionsArray[num].question)!
             
             
             rightAns.setTitle(selectedQuiz?.questionsArray[num].rightAnswer, for: .normal)
@@ -128,8 +128,8 @@ class QuizQuestionViewController: UIViewController {
         commentLabel.text = (selectedQuiz?.questionsArray[questionNum!].comment)! + "\nThe right answer is: " + (selectedQuiz?.questionsArray[questionNum!].rightAnswer)!
     }
     
-    @IBAction func nextTapped(_ sender: Any) {
-        
+    @IBAction func finishTapped(_ sender: Any) {
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
 }
