@@ -13,9 +13,13 @@ class WebsiteViewController: UIViewController, WKNavigationDelegate {
 
     var selectedLink: String?
     @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        activityIndicator.layer.cornerRadius = 10
+        activityIndicator.clipsToBounds = true
 
         webView.navigationDelegate = self
         if let link = selectedLink {
@@ -32,6 +36,7 @@ class WebsiteViewController: UIViewController, WKNavigationDelegate {
     // MARK: - WebView Functions
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         title = webView.title
+        activityIndicator.stopAnimating()
     }
 
     /*

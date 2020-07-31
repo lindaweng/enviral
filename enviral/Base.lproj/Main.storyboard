@@ -214,9 +214,9 @@
                                 <rect key="frame" x="10" y="178" width="404" height="315"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">Global warming is the increase of Earth's average surface temperature due to greenhouse gases that collect in the atmosphere like a thickening blanket, trapping the sun's heat and causing the planet to warm up. Greenhouse gases keep heat close to the earth’s surface making it livable for humans and animals. However, global warming is happening largely due to an over-emittance of these gases and fossil fuels (natural oil, gasoline, coal).
+                                <string key="text">Global warming is the increase of Earth's average surface temperature due to greenhouse gases that collect in the atmosphere like a thickening blanket, trapping the sun's heat and causing the planet to warm up. Greenhouse gases keep heat close to the earth’s surface making it livable for humans and animals. However, global warming is happening largely due to an over-emittance of these gases and fossil fuels (natural oil, gasoline, coal).
 Global warming that is causing extreme weather changes has shown its implications in the way of forest fires, heatwaves and severe tropical storms throughout the world.
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -241,7 +241,7 @@ Global warming that is causing extreme weather changes has shown its implication
                                 <rect key="frame" x="6" y="539" width="408" height="263"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">“Climate change” encompasses global warming, but refers to the broader range of changes that are happening to our planet. These include rising sea levels; shrinking mountain glaciers; accelerating ice melt in Greenland, Antarctica and the Arctic; and shifts in flower/plant blooming times. These are all consequences of the warming, which is caused mainly by people burning fossil fuels and putting out heat-trapping gases into the air. The terms “global warming” and “climate change” are sometimes used interchangeably, but strictly they refer to slightly different things.</mutableString>
+                                <string key="text">“Climate change” encompasses global warming, but refers to the broader range of changes that are happening to our planet. These include rising sea levels; shrinking mountain glaciers; accelerating ice melt in Greenland, Antarctica and the Arctic; and shifts in flower/plant blooming times. These are all consequences of the warming, which is caused mainly by people burning fossil fuels and putting out heat-trapping gases into the air. The terms “global warming” and “climate change” are sometimes used interchangeably, but strictly they refer to slightly different things.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -358,18 +358,24 @@ Global warming that is causing extreme weather changes has shown its implication
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NeS-Xl-dLb">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="PbW-W9-28w">
+                                <rect key="frame" x="167" y="410" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.19963791381278537" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="7T1-N7-0Rb"/>
                     </view>
                     <navigationItem key="navigationItem" id="6xE-uC-hmc"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="PbW-W9-28w" id="mbQ-b0-dDc"/>
                         <outlet property="webView" destination="NeS-Xl-dLb" id="kab-uT-9Mk"/>
                     </connections>
                 </viewController>
