@@ -9,13 +9,10 @@
 import UIKit
 
 class FactsViewController: UIViewController {
-
-    @IBOutlet weak var fact1Label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        fact1Label.text = "This is a very important fact about global warming.\nThis is a very important fact about global warming.\nThis is a very important fact about global warming.\nThis is a very important fact about global warming.\nThis is a very important fact about global warming.\nThis is a very important fact about global warming.\nThis is a very important fact about global warming.\nThis is a very important fact about global warming."
     }
     
 
